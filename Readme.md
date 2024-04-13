@@ -32,3 +32,5 @@
 ### type declaration
 - the ability to create new object with same type
 - the purpose is to understanding object by create alias
+### create array
+- syntax `array := [...]string{"satu", "dua", "tiga"}`
