@@ -23,15 +23,16 @@ func main() {
 		"NOVEMBER",
 		"DECEMBER",
 	}
-
-	//	change the length of slice
+	/*
+		if we change the value of array it will change the value of slice
+		if we change the value of slice it will change the value of array
+	*/
 	slice1 := months[0:2] // slice the array from start index to end index
 	fmt.Println("my slice 3: ", slice1)
 	fmt.Println("my slice 3 length: ", len(slice1))
 	fmt.Println("my slice 3 cap: ", len(slice1))
 	fmt.Println("example array index from first to specific index: ", months[:2])
 	fmt.Println("example array index from specific index to last index: ", months[2:])
-	fmt.Println(gap)
 
 	//	create slice with make function
 	/*
@@ -40,7 +41,7 @@ func main() {
 		len() function - returns the length of the slice (the number of elements in the slice)
 		cap() function - returns the capacity of the slice (the number of elements the slice can grow or shrink to)
 	*/
-
+	fmt.Println(gap)
 	mySlice := make([]int, 5, 10)
 	fmt.Printf("my slice %#v \n", mySlice)
 	fmt.Printf("my length %d \n", len(mySlice))
@@ -79,7 +80,7 @@ func main() {
 	fmt.Println(gap)
 
 	/*
-		if slicing index is inside of the length it will replace the original array
+		if slicing index is inside the length it will replace the original array
 		if slicing index is equals last index it will create new array
 	*/
 
@@ -116,5 +117,10 @@ func main() {
 	fmt.Println("my slice copy capacity: ", cap(mySliceCopy))
 
 	fmt.Println(gap)
+
+	intArray := [...]int{1, 2, 3, 4, 5}
+	intSlice := []int{1, 2, 3, 4, 5}
+	fmt.Println(intArray)
+	fmt.Println(intSlice)
 
 }

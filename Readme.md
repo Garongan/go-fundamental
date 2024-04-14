@@ -34,3 +34,37 @@
 - the purpose is to understanding object by create alias
 ### create array
 - syntax `array := [...]string{"satu", "dua", "tiga"}`
+- get array length using `len(array)`
+### slice
+- we can slice from array using `slice := array[start:end]`, if start or end is not init it will start from 0 and end until last index of array
+- init slice using make => `slice_name := make([]type, length, capacity)`
+- append element to slice
+  - `slice_name = append(slice_name, element1, element2, ...)`
+  - `slice3 = append(slice1, slice2...)`
+- we can copy slice using `copy(dest, src)`
+
+### map
+
+- map is like object in javascript
+
+- create map using syntax
+
+  ```go
+  variable := map[typeKey]typeValue{
+      key: value
+  }
+  ```
+
+- access map => `variable[key]`
+
+- change value or add value => `variable[key] = value`
+
+- length of map => `len(variable)`
+
+- create blank map using make function
+
+  ```go
+  mapName := make(map[typeKey]typeValue)
+  ```
+
+delete map using key => `delete(mapName, key)`

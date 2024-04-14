@@ -23,7 +23,7 @@ func main() {
 	fmt.Print(a, b, "\n")
 
 	// Println add new line and add whitespace and can add new format
-	fmt.Println(i, j, "\n")
+	fmt.Println(i, j)
 
 	// Printf
 	fmt.Printf("this is value of i %s \n", i)
